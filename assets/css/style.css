@@ -1,0 +1,271 @@
+* {
+padding:0;
+margin:0;
+background: black;
+}
+
+/*Diseño del header + barra*/
+
+header {
+    background-color: black; 
+    padding: 20px;
+}
+.Barra {
+   
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 28% 0 28%;
+    display: flex;
+    align-items: center;
+}
+li a{
+    margin: 1em 0 ;
+    font-size: bold;
+    padding: 4px 20px;
+    font-size: 20px;
+    border: 50px;;
+    color:white;
+}
+header a:hover{
+    border-radius: 50px;
+    background: coral;
+}
+main {
+    background-color:black;
+    padding: 0;
+    margin: 0;
+}
+
+/*footer*/
+
+footer {
+    margin-bottom: 70px;
+}
+#Logo {
+    width: 200px;
+    padding-left: 44%;
+}
+footer img {
+    width: 30px;
+    position:absolute;
+    left: 51%;
+    transform: translateX(-50%);
+    margin-top: 25px;;
+}
+footer p {
+    text-align: center;
+    color: white;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-style: inherit;
+}
+a {
+    text-decoration: none;
+}
+
+/*diseño del home*/
+
+main img {
+    width: 98%;
+    padding-left: 1%;
+    border-width: 10px solid;
+    border-color: black;
+}
+.ImagenDelBody {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+.descripcion {
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 50%;
+    order: 1;
+    padding-top: 50px;
+}
+
+h3 {
+    padding-bottom: 50px;
+    font-size: 30px;
+}
+#i {
+    width: 30px;
+    position:absolute;
+    left: 49%;
+    transform: translateX(-50%);
+    margin-top: 3px;
+    background-color: gray;
+
+  }
+
+/*diseño de la Tienda*/
+
+  #shop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .producto {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+  }
+.producto p{
+    color: white;
+}
+.producto button {
+    color:black ;
+    background: white;
+}
+.producto button:hover {
+    border-radius: 20px;
+    background: cyan;
+    width: 50px;
+}
+.producto h3 {
+    color: white;
+    font-size: 20px;
+}
+.Filtros {
+    color: white;
+    box-sizing: border-box;
+}
+#botonT {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Filtros option {
+    color: white;
+    text-align: center;
+}
+.Filtros label {
+    color: white;
+    text-align: center;
+}
+select#category {
+    color: white;
+}
+select#Talle {
+    color:white;
+}
+  /*Formulario de contacto*/
+.cont {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+  }
+  
+ .cont label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+  }
+  
+ .cont input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    color: #fff;
+  }
+  
+.cont button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+ .cont button:hover {
+    background-color: #fff;
+    color: #333;}
+
+/*Ubicacion de la tienda*/
+
+    iframe {
+        width: 80%;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+@media only screen and (min-width:300px){
+    header {
+        background-color: black; 
+        padding: 2%;
+        width: 100%;
+        height:100%;
+        display:flex;
+    }
+    .Barra {
+       
+        list-style-type: none;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0 10px 0 10px;
+        display: flex;
+
+    }
+    li a{
+        margin: 1em 0 ;
+        font-size: bold;
+        font-size: 13px;
+        border: 5%;;
+        color:white;
+
+    }
+    header a:hover{
+        border-radius: 8%;
+        background: coral;
+    }
+    img#logo {
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+    ul.barra {
+        display:flex;
+        justify-content:center;
+    }
+    h3 {
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+    div.descripcion {
+        width: 100%;
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:center;
+    }
+
+}
+/*Font Awesome: Para los logos de la pagina: twitter, instagram, home, etc*/
