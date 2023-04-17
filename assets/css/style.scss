@@ -1,0 +1,273 @@
+$color-fondo: black;
+$color-letra: white;
+$color-botones: white;
+$color-fondo-botones: cyan;
+
+
+// Diseño de inicio
+nav.navbar.navbar-expand-lg.navbar-dark.p-3.bg-danger {
+background-color: $color-fondo !important;
+}
+
+.carrito {
+width: 30px;
+}
+
+.collapse.navbar-collapse li {
+font-size: 25px;
+}
+
+body {
+background-color: $color-fondo;
+}
+
+.col {
+color: $color-letra;
+width: 30%;
+height: 20%;
+}
+
+.navbar-nav {
+align-items: center;
+}
+
+.carousel-item {
+height: 50%;
+width: 100%;
+}
+
+footer.text-center.text-white {
+background-color: $color-fondo;
+}
+
+.text-dark {
+color: $color-letra !important;
+}
+
+.fab img {
+width: 30px;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: auto;
+grid-gap: 1rem;
+padding: 1rem;
+color: wheat;
+
+
+$grid-margin: 20px;
+$grid-columns: 3;
+$grid-width: calc((100% - (#{$grid-columns - 1} * #{$grid-margin})) / #{$grid-columns}); //se que no es necesario esto simplemente era para demostar el conocimiento de scss
+
+@mixin transition($property, $duration: 0.2s, $ease: ease-in-out) {
+  transition: $property $duration $ease;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -#{$grid-margin / 2};
+}
+
+.grid-item {
+  flex: 0 0 $grid-width;
+  margin: #{$grid-margin / 2};
+  height: 500px;
+  background-color: rgb(14, 13, 12);
+
+  &.grid-item-2 {
+    background-image: url(../img/maxresdefault.jpg);
+    background-position: center;
+    position: relative;
+    background-size:cover;
+  }
+
+  &.grid-item-1 {
+    p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    }
+  }
+
+  &.animated {
+    @include transition(all);
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    @include transition(all);
+  }
+}
+}
+
+// Diseño de la Tienda 
+$color-letra-producto: white;
+$color-fondo-producto: #333;
+$color-letra-botones-producto: black;
+$color-fondo-botones-producto: white;
+$border-radius-botones-producto: 20px;
+$width-botones-producto: 50px;
+$font-size-h3-producto: 20px;
+$color-filtros: white;
+$border-radius-boton-tienda: 3px;
+
+#shopse {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.producto {
+  img {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+  }
+
+  p {
+    color: $color-letra-producto;
+  }
+
+  button {
+    color: $color-letra-botones-producto;
+    background: $color-fondo-botones-producto;
+    border: none;
+    padding: 10px 20px;
+    border-radius: $border-radius-botones-producto;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+         &:hover {
+           background: darken($color-fondo-botones-producto, 10%);
+           transform: scale(1.05);
+    }
+  }
+
+  h3 {
+    color: $color-letra-producto;
+    font-size: $font-size-h3-producto;
+  }
+}
+
+.Filtros {
+  color: $color-filtros;
+  box-sizing: border-box;
+
+  #botonT {
+    background-color: $color-fondo-botones;
+    color: $color-letra-botones-producto;
+    border: none;
+    padding: 10px 20px;
+    border-radius: $border-radius-boton-tienda;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+      &:hover {
+      background: darken($color-fondo-botones, 10%);
+      transform: scale(1.05);
+     }
+    }
+
+  option {
+    color: black;
+    text-align: center;
+  }
+
+  label {
+    color: $color-letra-producto;
+    text-align: center;
+  }
+
+  select#category {
+    color: black;
+  }
+
+  select#Talle {
+    color: black;
+  }
+}
+
+  //Formulario de contacto
+  $color-fondo-cont: #333;
+  $color-letra-cont: #fff;
+  
+  .cont {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  background-color: $color-fondo-cont;
+  
+    label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: $color-letra-cont;
+    }
+  
+        input, textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        color: $color-letra-cont;
+        }
+  
+            button {
+            background-color: $color-fondo-botones;
+            color: $color-letra-botones-producto;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            font-weight: bold;
+            cursor: pointer;
+                &:hover {
+                background-color: $color-letra-botones-producto;
+                color: $color-fondo-botones;
+                }
+                }
+                }
+
+//Ubicacion de la tienda
+
+    iframe {
+        width: 80%;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+//Media queries para los grids que no son responsive
+
+    @media screen and (min-width:992px) {
+        li .nav-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    
+    }
+    @media screen and (max-width: 850px) {
+        .grid {
+      
+            display: grid;
+            grid-template-columns:auto;
+            grid-gap: 1rem;
+            padding: 1rem;
+    }
+}
